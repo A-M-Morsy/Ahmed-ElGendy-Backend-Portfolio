@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed El-Gendy | Senior PHP &amp; Laravel Developer</title>
+  <meta name="description" content="Ahmed El-Gendy is a Senior Back-End PHP and Laravel Developer with 9+ years of experience building scalable architectures, APIs, payment integrations and high-traffic systems.">
+  <meta name="author" content="Ahmed Mohamed Morsy El-Gendy">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmed El-Gendy | Senior PHP &amp; Laravel Developer">
+  <meta property="og:description" content="Scalable architectures, APIs and high-traffic systems with PHP and Laravel.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d12'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' text-anchor='middle' fill='%23ff5a3c'%3EAG%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    /* Apply the saved theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Ahmed El-Gendy, back to top">
+        <span class="brand-mark">AG</span>
+        <span class="brand-name">Ahmed El-Gendy</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-link>About</a></li>
+        <li><a href="#skills" data-link>Skills</a></li>
+        <li><a href="#projects" data-link>Projects</a></li>
+        <li><a href="#systems" data-link>Systems</a></li>
+        <li><a href="#experience" data-link>Experience</a></li>
+        <li><a href="#contact" data-link>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span> Available for senior back-end roles</p>
+          <h1 class="hero-title reveal">Senior <span class="grad">PHP &amp; Laravel</span> Developer</h1>
+          <p class="hero-lead reveal">
+            I design and build scalable architectures, secure APIs and payment-grade integrations
+            for high-traffic systems. Nine years of shipping Laravel platforms across e-commerce,
+            SaaS, fintech, learning and healthcare.
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#projects">View Projects
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-link" href="#contact">Contact Me</a>
+          </div>
+
+          <dl class="stats reveal">
+            <div class="stat"><dt>Years of PHP / Laravel</dt><dd><span data-count="9">9</span>+</dd></div>
+            <div class="stat"><dt>Companies &amp; products</dt><dd><span data-count="7">7</span></dd></div>
+            <div class="stat"><dt>Payment gateways integrated</dt><dd><span data-count="7">7</span></dd></div>
+            <div class="stat"><dt>Developers led</dt><dd><span data-count="3">3</span></dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="code-file">Engineer.php</span>
+            </div>
+<pre class="code"><code><span class="c-k">final class</span> <span class="c-c">Engineer</span> <span class="c-k">implements</span> <span class="c-c">Scalable</span>
+{
+    <span class="c-k">public function</span> <span class="c-f">profile</span>(): <span class="c-t">array</span>
+    {
+        <span class="c-k">return</span> [
+            <span class="c-s">'name'</span>    =&gt; <span class="c-s">'Ahmed El-Gendy'</span>,
+            <span class="c-s">'role'</span>    =&gt; <span class="c-s">'Senior Back-End Developer'</span>,
+            <span class="c-s">'stack'</span>   =&gt; [<span class="c-s">'PHP'</span>, <span class="c-s">'Laravel'</span>, <span class="c-s">'Redis'</span>],
+            <span class="c-s">'focus'</span>   =&gt; [
+                <span class="c-s">'architecture'</span>,
+                <span class="c-s">'performance'</span>,
+                <span class="c-s">'integrations'</span>,
+            ],
+            <span class="c-s">'based_in'</span> =&gt; <span class="c-s">'Cairo, Egypt'</span>,
+        ];
+    }
+}</code></pre>
+          </div>
+          <div class="chip chip-a"><span class="chip-dot"></span> queue:work running</div>
+          <div class="chip chip-b"><span class="chip-dot ok"></span> 200 OK &middot; cached</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">01 / About</p>
+          <h2>Engineering that holds up under load</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am a Senior Back-End PHP and Laravel Developer with 9+ years of experience designing,
+              building and scaling production systems across e-commerce, SaaS, fintech, LMS, ERP, POS and
+              healthcare.
+            </p>
+            <p>
+              My work centers on system architecture, database design, application log tracking and
+              queue-driven performance optimization. I integrate payment and BNPL gateways (Urway, HyperPay,
+              Tabby, Tamara), Taqnyat SMS, OTTO, Keycloak identity management and ZATCA e-invoicing.
+            </p>
+            <p>
+              I set coding standards, run code reviews and mentor developers in Agile teams. I have delivered
+              multi-tenant SaaS, single and multi-vendor e-commerce platforms, auction and affiliate systems,
+              and large-scale RDBMS solutions.
+            </p>
+          </div>
+
+          <aside class="about-card reveal" aria-label="Quick facts">
+            <h3>Quick facts</h3>
+            <ul class="facts">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                <div><span class="f-label">Location</span><span class="f-val">Maadi, Cairo, Egypt</span></div>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6"/></svg>
+                <div><span class="f-label">Current role</span><span class="f-val">Senior Back-End Developer, Beetleware</span></div>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.2 2.2 2.5 5 2.5s5-1.3 5-2.5v-4.5"/></svg>
+                <div><span class="f-label">Education</span><span class="f-val">B.Sc. Information Technology, Zagazig University</span></div>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+                <div><span class="f-label">Military service</span><span class="f-val">Completed</span></div>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 3.8 5.7 3.8 9s-1.2 6.3-3.8 9c-2.6-2.7-3.8-5.7-3.8-9S9.4 5.7 12 3z"/></svg>
+                <div><span class="f-label">Languages</span><span class="f-val">Arabic (Native), English (Professional working)</span></div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">02 / Technical stack</p>
+          <h2>Tools I use to ship reliable systems</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3><span class="mono">&lt;/&gt;</span> Backend &amp; Core</h3>
+            <ul class="badges">
+              <li>PHP 8.x (OOP)</li><li>Laravel</li><li>RESTful APIs</li><li>GraphQL</li><li>Microservices</li>
+              <li>Horizon</li><li>Octane</li><li>Queues</li><li>Sanctum</li><li>Passport</li><li>Telescope</li><li>Pulse</li><li>Scout</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="mono">DB</span> Databases &amp; Caching</h3>
+            <ul class="badges">
+              <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>Elasticsearch</li>
+              <li>Query optimization</li><li>Indexing</li><li>Schema design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="mono">&gt;_</span> DevOps &amp; Cloud</h3>
+            <ul class="badges">
+              <li>Docker</li><li>Kubernetes</li><li>AWS (EC2, S3)</li><li>DigitalOcean</li><li>Cloudflare</li>
+              <li>Linux</li><li>Nginx</li><li>CI/CD</li><li>Git</li><li>GitLab</li><li>GitHub</li><li>Bitbucket</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="mono">{ }</span> Architecture &amp; Testing</h3>
+            <ul class="badges">
+              <li>SOLID</li><li>Repository pattern</li><li>Service layer</li><li>DDD</li><li>Event-driven</li>
+              <li>Multi-tenancy</li><li>PHPUnit</li><li>Laravel Dusk</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="mono">API</span> Integrations</h3>
+            <ul class="badges">
+              <li>Urway</li><li>HyperPay</li><li>Tabby</li><li>Tamara</li><li>Stripe</li><li>PayPal</li><li>Razorpay</li>
+              <li>Taqnyat SMS</li><li>OTTO</li><li>Keycloak</li><li>ZATCA e-invoicing</li><li>OpenAI</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="mono">UI</span> Frontend, Real-time &amp; Tools</h3>
+            <ul class="badges">
+              <li>Livewire</li><li>Filament</li><li>Tailwind CSS</li><li>Bootstrap</li><li>JavaScript</li><li>AJAX</li>
+              <li>Socket.io</li><li>WebSockets</li><li>RabbitMQ</li><li>Node.js</li><li>NestJS</li>
+              <li>Agile / Scrum</li><li>Jira</li><li>ClickUp</li><li>Notion</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">03 / Featured projects</p>
+          <h2>Case studies from production systems</h2>
+          <p class="section-note">
+            Client code is private, so these are architecture-level write-ups. Source links currently point to my
+            GitHub profile; ask for a walkthrough and I will show the details.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-no mono">01</span>
+              <span class="project-tag">Multi-tenant SaaS</span>
+            </div>
+            <h3>Multi-Tenant SaaS Platform</h3>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>Many customers needed one product with isolated data, their own configuration and predictable performance as tenants grew.</dd></div>
+              <div><dt>Architecture</dt><dd>Tenant-aware Laravel core with strict data isolation, a service-layer domain, queue-driven background work and modular features that can be switched on per tenant.</dd></div>
+            </dl>
+            <ul class="tags"><li>Laravel</li><li>Multi-tenancy</li><li>Queues</li><li>Redis</li><li>PostgreSQL</li></ul>
+            <div class="project-links">
+              <a class="link" href="https://github.com/A2mm" target="_blank" rel="noopener noreferrer">GitHub Repo
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+              <a class="link" href="#contact">Request walkthrough</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-no mono">02</span>
+              <span class="project-tag">Payments &amp; BNPL</span>
+            </div>
+            <h3>Payment Gateway Integration Layer</h3>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>Checkout flows depended on several providers, each with its own callbacks, statuses and failure modes, which made reconciliation slow and error-prone.</dd></div>
+              <div><dt>Architecture</dt><dd>A provider-agnostic payment interface with signed webhook handling, idempotent callbacks, audit logging and reconciliation jobs covering Urway, HyperPay, Tabby, Tamara, Stripe, PayPal and Razorpay.</dd></div>
+            </dl>
+            <ul class="tags"><li>Laravel</li><li>REST APIs</li><li>Webhooks</li><li>Queues</li><li>MySQL</li></ul>
+            <div class="project-links">
+              <a class="link" href="https://github.com/A2mm" target="_blank" rel="noopener noreferrer">GitHub Repo
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+              <a class="link" href="#contact">Request walkthrough</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-no mono">03</span>
+              <span class="project-tag">High-traffic ticketing</span>
+            </div>
+            <h3>Live Sports Ticketing Engine</h3>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>Ticket sales for live events arrive in sharp spikes, and the system must never oversell a seat while staying responsive.</dd></div>
+              <div><dt>Architecture</dt><dd>Atomic inventory locking, Redis caching for read-heavy pages, queued order processing and payment confirmation, plus indexed queries on the hottest tables.</dd></div>
+            </dl>
+            <ul class="tags"><li>Laravel</li><li>Redis</li><li>Queues</li><li>Locking</li><li>MySQL</li></ul>
+            <div class="project-links">
+              <a class="link" href="https://github.com/A2mm" target="_blank" rel="noopener noreferrer">GitHub Repo
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+              <a class="link" href="#contact">Request walkthrough</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project reveal">
+            <div class="project-top">
+              <span class="project-no mono">04</span>
+              <span class="project-tag">E-commerce &amp; Compliance</span>
+            </div>
+            <h3>E-Commerce Engine with ZATCA E-Invoicing</h3>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>Stores needed flexible catalogs and checkout, plus tax-compliant electronic invoices for Saudi regulations.</dd></div>
+              <div><dt>Architecture</dt><dd>Extensible commerce core built on Bagisto, an invoice service that generates and submits ZATCA-compliant documents, and background jobs with retries and a full audit trail.</dd></div>
+            </dl>
+            <ul class="tags"><li>Laravel</li><li>Bagisto</li><li>ZATCA</li><li>Livewire</li><li>MySQL</li></ul>
+            <div class="project-links">
+              <a class="link" href="https://github.com/A2mm" target="_blank" rel="noopener noreferrer">GitHub Repo
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+              <a class="link" href="#contact">Request walkthrough</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="more-work reveal">
+          Also delivered: real-time LMS platforms, CMS and article systems, ERP and fintech modules, POS, auction and
+          affiliate systems, Umrah and visa booking, automotive inspection and a healthcare interoperability platform.
+        </p>
+      </div>
+    </section>
+
+        <!-- ============ PRODUCTION SYSTEMS CAROUSEL (NEW SECTION) ============ -->
+    <section class="section" id="systems">
+      <div class="container">
+        <div class="systems-header-row reveal">
+          <header class="section-head">
+            <p class="kicker">04 / Delivered platforms</p>
+            <h2>More systems built in production</h2>
+            <p class="section-sub">
+              Beyond core SaaS, payments, ticketing, and ZATCA commerce, I have architected and shipped full-cycle platforms across education, travel, automotive, retail, and healthcare.
+            </p>
+          </header>
+
+          <div class="carousel-controls" aria-label="Delivered platforms carousel controls">
+            <button class="carousel-btn" id="sysPrev" type="button" aria-label="Previous platform">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel-btn" id="sysNext" type="button" aria-label="Next platform">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="systems-carousel reveal" id="systemsCarousel" role="region" aria-roledescription="carousel" aria-label="Delivered Platforms">
+          <div class="systems-viewport" id="systemsViewport">
+            <div class="systems-track" id="systemsTrack">
+
+              <!-- Slide 01 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">01</span>
+                  <span class="system-cat">EdTech &amp; Real-Time</span>
+                </div>
+                <h3>Real-Time Learning Management System</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Delivering dynamic courses with live educator-student interaction and instant session events without latency bottlenecks.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Architected scalable Laravel back ends paired with Socket.io real-time communication, Keycloak SSO authentication, and indexed database queries.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>Laravel</li>
+                  <li>Socket.io</li>
+                  <li>Keycloak</li>
+                  <li>DB Indexing</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">Beetleware</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+              <!-- Slide 02 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">02</span>
+                  <span class="system-cat">Travel &amp; Gov Workflows</span>
+                </div>
+                <h3>Umrah &amp; Online Visa Booking System</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Managing multi-step visa applications, high-value travel payments, and strict financial reconciliation with clear auditability.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Built end-to-end booking and application tracking pipelines integrated with Urway and HyperPay gateways plus centralized activity log tracking.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>Laravel</li>
+                  <li>Urway</li>
+                  <li>HyperPay</li>
+                  <li>Log Tracking</li>
+                  <li>REST APIs</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">SAFA SOFT</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+              <!-- Slide 03 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">03</span>
+                  <span class="system-cat">Enterprise &amp; FinTech</span>
+                </div>
+                <h3>Modular ERP &amp; FinTech Service Engine</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Building maintainable financial and operational modules that scale cleanly across business domains without tight coupling.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Engineered decoupled ERP and fintech modules using strict service-layer architecture, repository patterns, and secure RESTful API contracts.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>PHP 8</li>
+                  <li>Laravel</li>
+                  <li>Service Layer</li>
+                  <li>FinTech APIs</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">T-Vencubator</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+              <!-- Slide 04 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">04</span>
+                  <span class="system-cat">Automotive &amp; Operations</span>
+                </div>
+                <h3>Car-Service &amp; Vehicle Inspection Platform</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Standardizing multi-point vehicle inspections, service history records, and operational reporting across service centers.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Developed structured inspection workflows, automated digital service reports, and historical vehicle tracking back ends.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>Laravel</li>
+                  <li>Workflow Engine</li>
+                  <li>Reporting</li>
+                  <li>MySQL</li>
+                  <li>REST APIs</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">LACASA CODE</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+              <!-- Slide 05 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">05</span>
+                  <span class="system-cat">Retail &amp; Live Bidding</span>
+                </div>
+                <h3>POS, Live Auction &amp; Affiliate Ecosystem</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Powering point-of-sale checkout, real-time auction bidding, and multi-tier affiliate tracking across global payment providers.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Led a team of 3 developers to build POS, auction, and affiliate platforms integrated with Stripe, PayPal, Razorpay, and full audit logging.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>Laravel</li>
+                  <li>Stripe &amp; PayPal</li>
+                  <li>Razorpay</li>
+                  <li>POS</li>
+                  <li>Team Lead</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">ATW LTD</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+              <!-- Slide 06 -->
+              <article class="system-card">
+                <div class="system-meta">
+                  <span class="system-num">06</span>
+                  <span class="system-cat">HealthTech &amp; Publishing</span>
+                </div>
+                <h3>Healthcare Interoperability &amp; High-Traffic CMS</h3>
+                <div class="system-block">
+                  <h4>Challenge</h4>
+                  <p>Exchanging clinical data reliably between healthcare systems while keeping content publishing workflows fast under heavy traffic.</p>
+                </div>
+                <div class="system-block">
+                  <h4>Solution</h4>
+                  <p>Built interoperability modules for a Medical Management Platform alongside optimized CMS and article publishing engines.</p>
+                </div>
+                <ul class="system-tags">
+                  <li>PHP / Laravel</li>
+                  <li>Healthcare APIs</li>
+                  <li>CMS</li>
+                  <li>Query Optimization</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="system-footer-bar">
+                  <span class="system-company">ACCURA &amp; Beetleware</span>
+                  <a href="#contact">Ask about architecture &rarr;</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="carousel-footer">
+            <div class="carousel-dots" id="systemsDots" role="tablist" aria-label="Delivered platforms pagination"></div>
+            <span class="carousel-counter" id="systemsCounter" aria-live="polite">01 / 05</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">05 / Experience</p>
+          <h2>Career timeline</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>Senior Back-End PHP Laravel Developer</h3>
+                <span class="t-date mono">Nov 2024 &ndash; Present</span>
+              </div>
+              <p class="t-org">Beetleware <span>&middot; Maadi, Cairo</span></p>
+              <ul>
+                <li>Architected scalable Laravel back ends for a Learning Management System with real-time educator-student interaction using Socket.io.</li>
+                <li>Built the ticketing back end for live sports events, handling ticket-sale spikes with queues, caching and locking to prevent overselling.</li>
+                <li>Designed and optimized a CMS and article management system for seamless content creation and publishing.</li>
+                <li>Integrated Taqnyat SMS, OTTO, Keycloak authentication, and Tabby and Tamara payment options.</li>
+                <li>Applied database indexing and query optimization on high-traffic modules.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>Senior Back-End PHP Laravel Developer</h3>
+                <span class="t-date mono">Dec 2023 &ndash; Oct 2024</span>
+              </div>
+              <p class="t-org">T-Vencubator <span>&middot; Cairo</span></p>
+              <ul>
+                <li>Built a multi-tenant SaaS platform with isolated tenant data and a scalable, maintainable architecture.</li>
+                <li>Led the Bagisto integration for e-commerce platforms, extending core functionality for client-specific requirements.</li>
+                <li>Developed ERP modules and a fintech system using service-layer architecture and secure API design.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>Senior Back-End PHP Laravel Developer</h3>
+                <span class="t-date mono">Jun 2022 &ndash; Nov 2023</span>
+              </div>
+              <p class="t-org">SAFA SOFT <span>&middot; Maadi, Cairo</span></p>
+              <ul>
+                <li>Integrated Urway and HyperPay payment gateways with secure transaction handling, callbacks and reconciliation.</li>
+                <li>Developed and maintained Umrah and online visa systems covering booking workflows, payments and application tracking.</li>
+                <li>Implemented log tracking to monitor system activity, speed up troubleshooting and support auditing.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>Senior Back-End Laravel Developer</h3>
+                <span class="t-date mono">Feb 2021 &ndash; May 2022</span>
+              </div>
+              <p class="t-org">LACASA CODE <span>&middot; Sheikh Zayed, Giza</span></p>
+              <ul>
+                <li>Delivered ZATCA e-invoicing integration for Saudi tax compliance.</li>
+                <li>Built an automotive and car-service inspection system covering inspection workflows, service records and reporting.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>PHP Laravel Developer</h3>
+                <span class="t-date mono">Dec 2019 &ndash; Jan 2021</span>
+              </div>
+              <p class="t-org">ATW LTD <span>&middot; Mohandseen, Giza</span></p>
+              <ul>
+                <li>Led and mentored a team of 3 developers, owning code reviews, coding standards and database schema design.</li>
+                <li>Built a POS system and auction and affiliate platforms with Stripe, PayPal and Razorpay payment integrations.</li>
+                <li>Implemented log tracking across applications to improve traceability and issue resolution.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>PHP Laravel Developer</h3>
+                <span class="t-date mono">Jan 2018 &ndash; Nov 2019</span>
+              </div>
+              <p class="t-org">ACCURA <span>&middot; Mansoura, Dakahlia</span></p>
+              <ul>
+                <li>Developed features for a Medical Management Platform enabling interoperability between healthcare systems.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <div class="t-card">
+              <div class="t-head">
+                <h3>PHP Laravel Developer</h3>
+                <span class="t-date mono">May 2017 &ndash; Dec 2017</span>
+              </div>
+              <p class="t-org">DIGITAL SOLUTIONS <span>&middot; Tanta, Gharbia</span></p>
+              <ul>
+                <li>Developed an LMS and customized WordPress plugins.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Education -->
+        <div class="edu reveal">
+          <h3>Education</h3>
+          <div class="edu-card">
+            <div>
+              <p class="edu-degree">Bachelor of Information Technology (IT)</p>
+              <p class="edu-school">Faculty of Computers and Information (FCI), Zagazig University</p>
+            </div>
+            <ul class="edu-meta">
+              <li class="mono">Sep 2009 &ndash; Jun 2013</li>
+              <li>Grade: Very Good</li>
+              <li>Graduation project: Excellent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="section" id="philosophy">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">06 / Engineering philosophy</p>
+          <h2>How I approach the work</h2>
+        </header>
+
+        <div class="phil-grid">
+          <article class="phil reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            <h3>Clean, maintainable code</h3>
+            <p>SOLID principles, a clear service layer, small focused classes and honest code reviews, so the next engineer can change the system with confidence.</p>
+          </article>
+          <article class="phil reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+            <h3>Performance by design</h3>
+            <p>Measure first, then fix. Indexing, eliminating N+1 queries, caching with Redis and moving slow work to queues keep response times steady under load.</p>
+          </article>
+          <article class="phil reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Security and compliance</h3>
+            <p>Validated input, least-privilege access, signed webhooks, identity management with Keycloak and audit-ready log tracking, plus regulatory work such as ZATCA.</p>
+          </article>
+          <article class="phil reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 11a3 3 0 1 0 0-6M17.5 14.3c2.2.6 3.5 2.6 3.5 5.7"/></svg>
+            <h3>Leadership and delivery</h3>
+            <p>I mentor developers, set coding standards and work in Agile teams, turning requirements into releases through CI/CD and clear communication.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="kicker">07 / Contact</p>
+          <h2>Let&rsquo;s build something that scales</h2>
+          <p class="contact-lead">
+            I am open to senior back-end roles and architecture-focused projects. The fastest way to reach me is email.
+          </p>
+
+          <div class="contact-actions">
+            <button class="btn btn-primary" id="copyEmail" type="button" data-email="ahmedmohamed3hg@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg>
+              <span id="copyLabel">Copy email address</span>
+            </button>
+            <a class="btn btn-ghost" href="mailto:ahmedmohamed3hg@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              Send an email
+            </a>
+          </div>
+          <p class="email-line mono" id="emailLine">ahmedmohamed3hg@gmail.com</p>
+
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Maadi, Cairo, Egypt</span>
+            </li>
+          </ul>
+
+          <ul class="socials" aria-label="Social links">
+            <li>
+              <a href="https://github.com/A2mm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ahmed-el-gendy-a69063328" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <!--
+              X / Twitter: remove this comment and set your handle to show the link.
+            <li>
+              <a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                <span>X</span>
+              </a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Ahmed Mohamed Morsy El-Gendy. All rights reserved.</p>
+      <p class="mono foot-note">Built with HTML, CSS &amp; vanilla JS</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
